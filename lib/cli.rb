@@ -23,7 +23,7 @@ class CLI
                 article = Article.all[input.to_i - 1]
                 Scraper.get_article_details(article) if !article.story
                 print_story(article)
-            elsif "list"
+            elsif 'list'
                 print_stories
             else 
                 puts "I didn't understand your input"
